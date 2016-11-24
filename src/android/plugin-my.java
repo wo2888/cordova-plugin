@@ -14,6 +14,7 @@ public class plugin-my extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        System.out.println("test is ok!>>>>>>>>>>>>>>>>>>>>>>>>");
         if (action.equals("coolMethod")) {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
